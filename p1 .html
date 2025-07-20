@@ -1,0 +1,145 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HealthFirst Hospital</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #333;
+    }
+    header {
+      background: #007BFF;
+      color: #fff;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      background: #0056b3;
+      padding: 0.5rem;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .hero img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .services, .doctors {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+    .card {
+      background: #f9f9f9;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .card img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #007BFF;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>HealthFirst Hospital</h1>
+    <p>Care. Compassion. Commitment.</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Services</a>
+    <a href="#doctors">Doctors</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="hero" id="home">
+    <img src="https://source.unsplash.com/1000x400/?hospital,healthcare" alt="Hospital Building" />
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?surgery,operation" alt="Surgery" />
+        <h3>Advanced Surgery</h3>
+        <p>State-of-the-art surgical facilities for all medical needs.</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?mri,scan" alt="MRI Scan" />
+        <h3>Radiology</h3>
+        <p>High-resolution imaging with MRI, CT, and X-Ray machines.</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?ambulance,emergency" alt="Emergency" />
+        <h3>24/7 Emergency</h3>
+        <p>Immediate care in critical situations, always ready to respond.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="doctors">
+    <h2>Meet Our Doctors</h2>
+    <div class="doctors">
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?doctor,portrait" alt="Doctor 1" />
+        <h3>Dr. Maria Khan</h3>
+        <p>Cardiologist with 15 years of experience in heart care.</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?nurse,smiling" alt="Doctor 2" />
+        <h3>Dr. Arjun Patel</h3>
+        <p>Neurosurgeon known for minimally invasive procedures.</p>
+      </div>
+      <div class="card">
+        <img src="https://source.unsplash.com/400x300/?pediatrician,childcare" alt="Doctor 3" />
+        <h3>Dr. Sunita Rao</h3>
+        <p>Expert pediatrician dedicated to children's health and wellness.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: contact@healthfirsthospital.com</p>
+    <p>Phone: +123 456 7890</p>
+    <p>Address: 123 Healing Way, MedCity</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 HealthFirst Hospital. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>3D Bike Advertisement</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: linear-gradient(to right, #1c1c1c, #2c3e50);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+    }
+
+    .ad-container {
+      width: 800px;
+      max-width: 90%;
+      perspective: 1500px;
+    }
+
+    .bike-card {
+      background: #121212;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 30px 60px rgba(0,0,0,0.4);
+      transform-style: preserve-3d;
+      transition: transform 0.5s ease, box-shadow 0.5s;
+    }
+
+    .bike-card:hover {
+      transform: rotateY(10deg) rotateX(5deg) scale(1.03);
+      box-shadow: 0 50px 80px rgba(0,0,0,0.6);
+    }
+
+    .bike-img {
+      width: 50%;
+      height: 100px;
+      object-fit: cover;
+      border-bottom: 2px solid #00ffcc;
+    }
+
+    .bike-info {
+      padding: 30px;
+    }
+
+    .bike-info h1 {
+      margin: 0 0 10px;
+      font-size: 2rem;
+      color: #00ffcc;
+    }
+
+    .bike-info p {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #ccc;
+    }
+
+    .buy-button {
+      margin-top: 20px;
+      display: inline-block;
+      background: #00ffcc;
+      color: #121212;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .buy-button:hover {
+      background: #00bfa5;
+    }
+
+    @media (max-width: 768px) {
+      .bike-img {
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="ad-container">
+    <div class="bike-card">
+      <img class="bike-img" src="bike.png" alt="Superbike Advertisement" />
+      <div class="bike-info">
+        <h1>🔥 Kawasaki ZX-10R 2024</h1>
+        <p>Feel the rush with 998cc of pure power. Advanced traction, aerodynamic design, and street-dominating style – all in one beast. Get yours now and rule the roads like never before.</p>
+        <a href="#" class="buy-button">Book Now</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

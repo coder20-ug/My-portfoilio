@@ -1,0 +1,61 @@
+
+<!-- HTML Form for Appointment Booking -->
+<form id="appointmentForm">
+    <label for="fullname">Full Name:</label>
+    <input type="text" id="fullname" name="fullname" required>
+  
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+  
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required>
+  
+    <label for="department">Select Department:</label>
+    <select id="department" name="department" required>
+      <option value="cardiology">Cardiology</option>
+      <option value="neurology">Neurology</option>
+      <option value="orthopedics">Orthopedics</option>
+      <option value="pediatrics">Pediatrics</option>
+    </select>
+  
+    <label for="date">Preferred Date:</label>
+    <input type="date" id="date" name="date" required>
+  
+    <button type="submit">Book Now</button>
+  </form>
+  
+  <script>
+    document.getElementById('appointmentForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const formData = new FormData(this);
+      fetch('/api/book-appointment', {
+        method: 'POST',
+        body: JSON.stringify(Object.fromEntries(formData)),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      })
+      .then(response => response.json())
+      .then(data => alert(data.message))
+      .catch(error => alert('Error booking appointment.'));
+    });
+  </script>                                                                 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
